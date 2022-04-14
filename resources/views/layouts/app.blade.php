@@ -118,10 +118,10 @@
     <script src="{{ asset('js/toastr.min.js') }}"></script>
 
 
-    <script>
-    //   @if(session('success'))
-    //     toastr.success('Have fun storming the castle!', 'Miracle Max Says')
-    //   @endif
-    </script>
+    {{-- <script> --}}
+    {{-- //   @if(session('success')) --}}
+    {{-- //     toastr.success('Have fun storming the castle!', 'Miracle Max Says')
+    //   @endif --}}
+    {{-- </script> --}}
 </body>
 </html>
