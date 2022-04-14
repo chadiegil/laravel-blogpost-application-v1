@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use App\Models\Category;
+
 class PostController extends Controller
 {
 
@@ -58,7 +60,6 @@ class PostController extends Controller
         ]);
 
 
-
         $featured = $request->file('featured');
 
 
@@ -71,6 +72,7 @@ class PostController extends Controller
             'content' => $request->content,
             'featured' => 'uploads/posts/'. $featured_new_name,
             'category_id' => $request->category_id,
+            'slug'=> Str::slug($request->title)
         ]);
 
 

@@ -5,7 +5,7 @@
 @include('admin.includes.errors')
 
 
-    <div class="panel panel-default text-center">
+    <div class="panel panel-default text-center text-primary">
         Create new Category
     </div>
     @if(session('success'))

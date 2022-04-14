@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="panel panel-default">
+    <div class="panel panel-default text-center text-primary">
         Create a Post
     </div>
 
